@@ -1,3 +1,7 @@
 from django.contrib import admin
+from squad.models import *
 
-# Register your models here.
+admin.site.register(Member)
+admin.site.register(Group)
+admin.site.register(Server)
+admin.site.register(TimeStamp)
