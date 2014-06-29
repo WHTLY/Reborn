@@ -1,0 +1,26 @@
+body {
+    background: #686868;
+    font-family: Verdana;
+}
+
+.box {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin-top: 15%;
+}
+
+.box table th{
+    text-align: center;
+    background: #788a5d;
+}
+
+.box table{
+    width: auto;
+    height: auto;
+    background-color: #2c2c2c;
+    text-align: right;
+    color: #b2b2b2;
+    border-collapse: collapse;
+}
+

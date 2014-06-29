@@ -1,9 +1,17 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
+
     <meta charset="UTF-8">
     <title>Reborn Community</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
 </head>
-<body>
-    test
+<body>{% for rank in ranks %}
+        <div class="box">
+        <table><th>{{ rank }}</th>
+        {% for member in members %}{% for group in member.groups.all %}
+        {% if group == rank %}<tr><td>{{ member }}</td></tr>{% endif %}{% endfor %}
+        {% endfor %}
+        </table></div>{% endfor %}
 </body>
 </html>
