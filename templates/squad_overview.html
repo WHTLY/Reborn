@@ -6,12 +6,12 @@
     <title>Reborn Community</title>
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
 </head>
-<body>{% for rank in ranks %}
-        <div class="box">
+<body><div id="content">
+{% for rank in ranks %}<div class="box">
         <table><th>{{ rank }}</th>
         {% for member in members %}{% for group in member.groups.all %}
         {% if group == rank %}<tr><td>{{ member }}</td></tr>{% endif %}{% endfor %}
         {% endfor %}
-        </table></div>{% endfor %}
+        </table></div>{% endfor %}</div>
 </body>
 </html>

@@ -7,3 +7,4 @@ def overview(request):
     members = Member.objects.all()
 
     return render(request, 'squad_overview.html', {'ranks': ranks, 'members': members})
+

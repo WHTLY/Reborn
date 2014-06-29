@@ -3,24 +3,30 @@ body {
     font-family: Verdana;
 }
 
+#content {
+
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .box {
     display: inline-block;
     width: 300px;
-    height: 200px;
+    min-height: 100px;
     margin-top: 15%;
 }
 
 .box table th{
     text-align: center;
     background: #788a5d;
+    color: lightgrey;
 }
 
 .box table{
-    width: auto;
-    height: auto;
+    width: 230px;
     background-color: #2c2c2c;
     text-align: right;
-    color: #b2b2b2;
+    color: lightgrey;
     border-collapse: collapse;
 }
 
