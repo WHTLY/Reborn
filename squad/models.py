@@ -11,7 +11,7 @@ class Group(models.Model):
 
 class Server(models.Model):
     name = models.CharField(max_length=255)
-    server_ip = models.IPAddressField()
+    server_ip = models.IPAddressField(default='0.0.0.0')
 
     def __str__(self):
         return self.name
