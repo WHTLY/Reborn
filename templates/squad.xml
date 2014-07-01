@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "{{ STATIC_URL }}logo/squad.dtd">
+<?xml-stylesheet href="squad.xsl?" type="text/xsl"?>
+
+<squad nick="Boba_Fet_Russ">
+<name>Reborn Community</name>
+<email>http://reborn-squad.net/</email>
+<web>http://reborn-squad.net/</web>
+<picture>slogo.paa</picture>
+<title>RBN</title>
+
+<member id="{{ member.aid }}" nick="[RBN] {{ member.nickname }}">
+<name>{{ member.nickname }}</name>
+<remark>{{ member.comment }}</remark>
+</member>
