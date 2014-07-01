@@ -1,6 +1,7 @@
 *.sqlite3
 *.idea
-static/
+static/admin
+static/grappelli
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
