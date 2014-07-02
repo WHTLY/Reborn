@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from squad.models import *
 from django.core.exceptions import ObjectDoesNotExist
+from django.conf import settings
 from django.http import HttpResponse
-
+import os
 
 def overview(request):
     ranks = Group.objects.all()
@@ -19,8 +20,7 @@ def retxml(request, user):
         return HttpResponse(None)
 
 def retlogo(request):
-    resp = HttpResponse(mimetype='application/force-download')
-    resp['Content-Disposition'] = 'attachment; filename=/static/slogo.paa'
-    resp['X-Sendfile'] = "static/slogo.paa"
-    return resp
+    f = open(settings.STATIC_ROOT+'solog.paa', 'rb')
+
+    return HttpResponse(f, mimetype='application/octet-stream')
 
