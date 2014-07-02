@@ -5,8 +5,5 @@ from django.views.generic import RedirectView
 
 urlpatterns = patterns('',
     url(r'^logo/(?P<user>\w{0,50})$', 'squad.views.retxml'),
-    url(r'^logo/.*paa$', 'django.views.static.serve', {
-            'document_root': settings.STATIC_ROOT,
-        }),
     url(r'^$', 'squad.views.overview'),
 )+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

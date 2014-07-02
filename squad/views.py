@@ -19,6 +19,8 @@ def retxml(request, user):
         return HttpResponse(None)
 
 def retlogo(request):
-    resp = HttpResponse()
-    resp['X-Accel-Redirect'] = "/static/slogo.paa"
+    resp = HttpResponse(mimetype='application/force-download')
+    resp['Content-Disposition'] = 'attachment; filename=/static/slogo.paa'
+    resp['X-Sendfile'] = "static/slogo.paa"
     return resp
+

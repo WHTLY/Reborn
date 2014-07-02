@@ -6,7 +6,7 @@
 <name>Reborn Community</name>
 <email>http://reborn-squad.net/</email>
 <web>http://reborn-squad.net/</web>
-<picture>slogo.paa</picture>
+<picture>http://reborn-team.net/static/slogo.paa</picture>
 <title>RBN</title>
 
 <member id="{{ member.aid }}" nick="[RBN] {{ member.nickname }}">
