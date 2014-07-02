@@ -20,7 +20,7 @@ def retxml(request, user):
         return HttpResponse(None)
 
 def retlogo(request):
-    f = open(settings.STATIC_ROOT+'solog.paa', 'rb')
+    f = open(settings.STATIC_ROOT+'slogo.paa', 'rb')
 
     return HttpResponse(f, mimetype='application/octet-stream')
 
