@@ -17,3 +17,8 @@ def retxml(request, user):
         return render(request, 'squad.xml', {'member': member})
     except ObjectDoesNotExist:
         return HttpResponse(None)
+
+def retlogo(request):
+    resp = HttpResponse()
+    resp['X-Accel-Redirect'] = "/static/slogo.paa"
+    return resp
