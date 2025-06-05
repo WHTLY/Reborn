@@ -1,10 +1,10 @@
-from django.conf.urls import patterns, url
+from django.urls import path, re_path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.generic import RedirectView
+from . import views
 
-urlpatterns = patterns('',
-    url(r'^logo/slogo.paa$', 'squad.views.retlogo'),
-    url(r'^logo/(?P<user>\w{0,50})$', 'squad.views.retxml'),
-    url(r'^$', 'squad.views.overview'),
-)+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns = [
+    path('logo/slogo.paa', views.retlogo),
+    re_path(r'^logo/(?P<user>\w{0,50})$', views.retxml),
+    path('', views.overview),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

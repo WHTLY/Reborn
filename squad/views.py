@@ -22,5 +22,5 @@ def retxml(request, user):
 def retlogo(request):
     f = open(settings.STATIC_ROOT+'slogo.paa', 'rb')
 
-    return HttpResponse(f, mimetype='application/octet-stream')
+    return HttpResponse(f, content_type='application/octet-stream')
 
