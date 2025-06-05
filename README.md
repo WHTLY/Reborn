@@ -69,3 +69,24 @@ python manage.py test
 
 For additional details on configuring the project, see [docs/local_setup.md](docs/local_setup.md).
 
+
+## Docker
+
+The project can also be run inside Docker. Build the image with:
+
+```bash
+docker build -t reborn .
+```
+
+Start the container and access the app at <http://localhost:8000/>:
+
+```bash
+docker run -p 8000:8000 reborn
+```
+
+Alternatively, you can use `docker-compose`:
+
+```bash
+docker-compose up --build
+```
+

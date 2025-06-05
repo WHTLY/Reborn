@@ -1,5 +1,5 @@
 from django.contrib import admin
-from squad.models import *
+from squad.models import Group, Member, Server, TimeStamp
 
 admin.site.register(Member)
 admin.site.register(Group)
