@@ -4,7 +4,7 @@ This repository contains a small Django project used for managing the Reborn com
 
 ## Features
 
-- Django 4 based project.
+- Django 5 based project.
 - Admin interface provided by [django-grappelli](https://github.com/sehmaschine/django-grappelli).
 - Displays a list of members grouped by rank.
 - Provides an XML endpoint and binary logo file for use in third‑party tools.
@@ -13,8 +13,8 @@ This repository contains a small Django project used for managing the Reborn com
 ## Requirements
 
 - Python 3.11+
-- Django 4.2
-- django-grappelli 3.x
+- Django 5.2
+- django-grappelli 4.x
 
 All required Python packages are listed in [requirements.txt](requirements.txt).
 
