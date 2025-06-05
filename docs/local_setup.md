@@ -9,3 +9,14 @@ This page provides a brief guide for setting up a development environment.
 5. Start the development server via `python manage.py runserver`.
 
 The default database is SQLite and is stored in `db.sqlite3`. Feel free to adjust the settings in `Reborn/settings.py` if you need a different database engine.
+
+## Docker development
+
+If you prefer using Docker, build and start the services with:
+
+```bash
+docker-compose up --build
+```
+
+This will run the development server on port 8000 and automatically apply database migrations.
+
