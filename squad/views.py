@@ -24,6 +24,5 @@ def retlogo(request):
     logo_path = os.path.join(settings.STATIC_ROOT, 'slogo.paa')
     with open(logo_path, 'rb') as f:
         data = f.read()
-
     return HttpResponse(data, content_type='application/octet-stream')
 

@@ -1,12 +1,11 @@
-from django.conf.urls import patterns, include, url
+from django.urls import path, include
 from django.contrib import admin
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
-    url(r'^$', include('squad.urls')),
-    url(r'^squad/', include('squad.urls')),
-    (r'^grappelli/', include('grappelli.urls')), # grappelli URLS
-    url(r'^admin/', include(admin.site.urls)),
-
-)
+urlpatterns = [
+    path('', include('squad.urls')),
+    path('squad/', include('squad.urls')),
+    path('grappelli/', include('grappelli.urls')),
+    path('admin/', admin.site.urls),
+]
